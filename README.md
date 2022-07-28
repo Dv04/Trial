@@ -1,10 +1,8 @@
 # Revision
 ## Let's go
 ### hmm
-#### IT[2]
+#### IT
 ##### Is
 
-###### Boring for sure[1]
+###### Boring for sure
 
-[1]: # Language: markdown
-[2]: # Path: README.md
