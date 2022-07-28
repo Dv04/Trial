@@ -9,7 +9,5 @@
 or
 --------
 
-hmm
-----
-----
-----
+so do you understand wht is going 
+on her or somethignas      awdsadnsdjasdb
