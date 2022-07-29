@@ -1,12 +1,12 @@
-name: learn-github-actions
-on: [push]
 jobs:
-  check-bats-version:
-    runs-on: macos-12
+  example-job:
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Cache node modules
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
         with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
