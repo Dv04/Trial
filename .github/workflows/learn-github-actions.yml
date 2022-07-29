@@ -10,15 +10,3 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
-
-name: Test
-on: [push]
-jobs:
-  example-job:
-    runs-on: macos-12
-    steps:
-      - name: Retrieve secret
-        env:
-          super_secret: ${{ secrets.SUPERSECRET }}
-        run: |
-          example-command "$super_secret"
